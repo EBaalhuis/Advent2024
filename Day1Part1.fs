@@ -2,7 +2,7 @@
     module Day1Part1 =
         let readLines filePath = System.IO.File.ReadLines(filePath);
 
-        let lines = readLines "C:\\Users\\Erik\\source\\repos\\Advent2024\\input1.txt"
+        let lines = readLines "input1.txt"
 
         let takeLeft (line: string) = line.Split ' ' |> Array.head
         let takeRight (line: string) = line.Split ' ' |> Array.last

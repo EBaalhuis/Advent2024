@@ -2,7 +2,7 @@
     module Day2Part2 =
         let readLines filePath = System.IO.File.ReadLines(filePath);
 
-        let lines = readLines "C:\\Users\\Erik\\source\\repos\\Advent2024\\input2.txt" |> List.ofSeq 
+        let lines = readLines "input2.txt" |> List.ofSeq 
         let split (l: string) = l.Split ' '
 
         let linesAsIntLists = lines |> List.map split |> List.map List.ofArray |> List.map (List.map int)
