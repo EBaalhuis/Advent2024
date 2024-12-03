@@ -1,1 +1,1 @@
-﻿printf "%d" Advent2024.Day1Part2.result
+﻿printf "%d" Advent2024.Day3Part1.result

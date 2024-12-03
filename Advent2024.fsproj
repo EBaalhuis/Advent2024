@@ -6,19 +6,25 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Include="example3.TXT">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Compile Include="Day3Part2.fs" />
+    <Compile Include="Day3Part1.fs" />
     <Content Include="input1.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="input2.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+	  <Content Include="input3.txt">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
     <Compile Include="Day2Part2.fs" />
     <Compile Include="Day2Part1.fs" />
     <Compile Include="Day1Part1.fs" />
     <Compile Include="Day1Part2.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
-
-  <ItemGroup />
 
 </Project>
