@@ -61,6 +61,6 @@ type TestClass () =
 
     [<TestMethod>]
     member this.Day5Part2 () =
-        let expected = 123
+        let expected = 5285
         let actual = Advent2024.Day5Part2.result
         Assert.AreEqual(expected, actual);
