@@ -1,6 +1,5 @@
 namespace Advent2024Test
 
-open System
 open Microsoft.VisualStudio.TestTools.UnitTesting
 
 [<TestClass>]
@@ -52,4 +51,16 @@ type TestClass () =
     member this.Day4Part2 () =
         let expected = 1921
         let actual = Advent2024.Day4Part2.result
+        Assert.AreEqual(expected, actual);
+
+    [<TestMethod>]
+    member this.Day5Part1 () =
+        let expected = 4135
+        let actual = Advent2024.Day5Part1.result
+        Assert.AreEqual(expected, actual);
+
+    [<TestMethod>]
+    member this.Day5Part2 () =
+        let expected = 123
+        let actual = Advent2024.Day5Part2.result
         Assert.AreEqual(expected, actual);
