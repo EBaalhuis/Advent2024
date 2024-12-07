@@ -10,20 +10,20 @@ open System
 
         let result = 
             lines |> 
-            List.reduce (fun x y -> x + y) |>
+            Seq.reduce (fun x y -> x + y) |>
             (fun s -> s.Split "do()") |>
-            Array.map (fun s -> s.Split "don't()") |>
-            Array.map Array.head |>
-            Array.map (fun s -> s.Split "mul(") |>
-            Array.concat |>
-            Array.map (fun s -> s.Split ")") |>
-            Array.map Array.head |>
-            Array.map (fun s -> s.Split ",") |>
-            Array.filter (fun list -> list.Length = 2) |>
-            Array.map (Array.filter (fun elem -> stringContainsOnlyDigits elem)) |>
-            Array.filter (fun list -> list.Length = 2) |>
-            Array.map (Array.filter (fun elem -> int elem >= 0 && int elem <= 999)) |>
-            Array.filter (fun list -> list.Length = 2) |>
-            Array.map (Array.map int) |>
-            Array.map (Array.reduce (fun x y -> x * y)) |>
-            Array.reduce (fun x y -> x + y)
+            Seq.map (fun s -> s.Split "don't()") |>
+            Seq.map Seq.head |>
+            Seq.map (fun s -> s.Split "mul(") |>
+            Seq.concat |>
+            Seq.map (fun s -> s.Split ")") |>
+            Seq.map Seq.head |>
+            Seq.map (fun s -> s.Split ",") |>
+            Seq.filter (fun sq -> sq.Length = 2) |>
+            Seq.map (Seq.filter (fun elem -> stringContainsOnlyDigits elem)) |>
+            Seq.filter (fun sq -> (Seq.length sq) = 2) |>
+            Seq.map (Seq.filter (fun elem -> int elem >= 0 && int elem <= 999)) |>
+            Seq.filter (fun sq -> (Seq.length sq) = 2) |>
+            Seq.map (Seq.map int) |>
+            Seq.map (Seq.reduce (fun x y -> x * y)) |>
+            Seq.reduce (fun x y -> x + y)

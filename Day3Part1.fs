@@ -22,16 +22,16 @@ open System
             (fun arr -> if arr.Length = 2 then arr else Array.empty) |>
             Array.map int
 
-        let whereBothNumbersWithinLimits (arr: int array) =
+        let whereBothNumbersWithinLimits (arr: int seq) =
             arr |>
-            (fun arr -> if Array.forall (fun elem -> elem >= 0 && elem <= 999) arr then arr else Array.empty)
+            (fun arr -> if Seq.forall (fun elem -> elem >= 0 && elem <= 999) arr then arr else Seq.empty)
 
 
         let result = 
             lines |> 
-            List.reduce (fun x y -> x + y) |>
+            Seq.reduce (fun x y -> x + y) |>
             getStringsBetweenMul |>
-            Array.map getTwoSetsOfDigitsAroundComma |>
-            Array.map whereBothNumbersWithinLimits |>
-            Array.map (fun arr -> if arr.Length = 0 then 0 else Array.reduce (fun x y -> x * y) arr) |>
-            Array.reduce (fun x y -> x + y)
+            Seq.map getTwoSetsOfDigitsAroundComma |>
+            Seq.map whereBothNumbersWithinLimits |>
+            Seq.map (fun sq -> if (Seq.length sq) = 0 then 0 else Seq.reduce (fun x y -> x * y) sq) |>
+            Seq.reduce (fun x y -> x + y)

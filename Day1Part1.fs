@@ -7,9 +7,9 @@
         let takeLeft (line: string) = line.Split ' ' |> Array.head
         let takeRight (line: string) = line.Split ' ' |> Array.last
 
-        let a = List.ofSeq(lines) |> List.map(takeLeft) |> List.sort |> List.map int
-        let b = List.ofSeq(lines) |> List.map(takeRight) |> List.sort |> List.map int
+        let a = lines |> Seq.map(takeLeft) |> Seq.sort |> Seq.map int
+        let b = lines |> Seq.map(takeRight) |> Seq.sort |> Seq.map int
 
-        let diffs = List.map2 (fun x y -> abs(x - y)) a b
+        let diffs = Seq.map2 (fun x y -> abs(x - y)) a b
 
-        let result = List.reduce (fun x y -> x + y) diffs
+        let result = Seq.reduce (fun x y -> x + y) diffs
