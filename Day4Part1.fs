@@ -6,53 +6,35 @@ open System
 
         let lines = readLines "input4.txt" |> List.ofSeq 
 
-        let count_occurrences_of_word (lines:string seq) (word: string) =
-            lines |>
-            Seq.map (fun s -> s.Split word) |>
-            Seq.map (fun l -> l.Length - 1) |>
-            Seq.reduce (+)
+        let get_element_at (x: int) (y: int) (lines: string seq) =
+            (Array.ofSeq lines)[y] |>
+            Array.ofSeq |>
+            (fun line -> Array.get line x)
 
-        let count_occurrences_of_word_and_its_reverse (lines: string seq) (word: string) =
-            count_occurrences_of_word lines word + count_occurrences_of_word lines (String.Concat(Seq.rev word))
+        let is_xmas (start_x: int) (start_y: int) (delta_x: int) (delta_y: int) =
+            if start_x + 3 * delta_x < 0 || start_x + 3 * delta_x >= lines.Head.Length then
+                false
+            else if start_y + 3 * delta_y < 0 || start_y + 3 * delta_y >= lines.Length then
+                false
+            else
+                get_element_at start_x start_y lines = 'X' &&
+                get_element_at (start_x + delta_x) (start_y + delta_y) lines = 'M' &&
+                get_element_at (start_x + 2 * delta_x) (start_y + 2 * delta_y) lines = 'A' &&
+                get_element_at (start_x + 3 * delta_x) (start_y + 3 * delta_y) lines = 'S'
 
-        let transpose (lines:string seq) =
-            [0 .. (List.ofSeq lines).Head.Length-1] |>
-            Seq.map (fun x -> (Seq.map (Seq.skip x) lines)) |>
-            Seq.map (Seq.map Seq.head) |>
-            Seq.map String.Concat
-
-        let prepend_n_spaces (n: int) (s: string) =
-            s |>
-            Seq.append (Seq.init n (fun _ -> ' ')) |>
-            String.Concat
-
-        let append_n_spaces (n: int) (s: string) =
-            s |>
-            Seq.rev |>
-            Seq.append (Seq.init n (fun _ -> ' ')) |>
-            Seq.rev |>
-            String.Concat
-
-        let diagonalise_bottom_left_top_right (lines:string list) =
-            [0 .. lines.Length - 1] |>
-            Seq.map (fun x -> 
-                (Array.ofSeq lines)[x] |> 
-                prepend_n_spaces x |>
-                append_n_spaces (lines.Length - x)) |>
-            Seq.map String.Concat |>
-            transpose
-
-        let diagonalise_top_left_bottom_right (lines:string list) =
-            [0 .. lines.Length - 1] |>
-            Seq.map (fun x -> 
-                (Array.ofSeq lines)[x] |> 
-                prepend_n_spaces (lines.Length - x) |>
-                append_n_spaces x) |>
-            Seq.map String.Concat |>
-            transpose
+        let count_starting_at (start_x: int) (start_y: int) =
+            (if (is_xmas start_x start_y 0 1) then 1 else 0) +
+            (if (is_xmas start_x start_y 0 -1) then 1 else 0) + 
+            (if (is_xmas start_x start_y 1 0) then 1 else 0) +
+            (if (is_xmas start_x start_y 1 1) then 1 else 0) + 
+            (if (is_xmas start_x start_y 1 -1) then 1 else 0) +
+            (if (is_xmas start_x start_y -1 0) then 1 else 0) + 
+            (if (is_xmas start_x start_y -1 1) then 1 else 0) +
+            (if (is_xmas start_x start_y -1 -1) then 1 else 0)
 
         let result = 
-            count_occurrences_of_word_and_its_reverse lines "XMAS" +
-            count_occurrences_of_word_and_its_reverse (transpose lines) "XMAS" +
-            count_occurrences_of_word_and_its_reverse (diagonalise_bottom_left_top_right lines) "XMAS" +
-            count_occurrences_of_word_and_its_reverse (diagonalise_top_left_bottom_right lines) "XMAS"
+            Seq.allPairs [0 .. lines.Head.Length - 1] [0 .. lines.Length - 1] |>
+            Seq.map (fun pair -> 
+                count_starting_at (fst pair) (snd pair)) |>
+            Seq.reduce (+)
+            
