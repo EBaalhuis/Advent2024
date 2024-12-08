@@ -89,3 +89,15 @@ type TestClass () =
         let actual = Advent2024.Day7Part2.result
         Assert.AreEqual(expected, actual);
 
+    [<TestMethod>]
+    member this.Day8Part1 () =
+        let expected = 299
+        let actual = Advent2024.Day8Part1.result
+        Assert.AreEqual(expected, actual);
+
+    [<TestMethod>]
+    member this.Day8Part2 () =
+        let expected = 1032
+        let actual = Advent2024.Day8Part2.result
+        Assert.AreEqual(expected, actual);
+

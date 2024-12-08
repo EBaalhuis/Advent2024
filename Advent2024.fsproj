@@ -8,10 +8,15 @@
   <ItemGroup>
     <Compile Include="Day7Part1.fs" />
     <Compile Include="Day7Part2.fs" />
+    <Compile Include="Day8Part1.fs" />
+    <Compile Include="Day8Part2.fs" />
     <Content Include="example6.TXT">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="example7.TXT">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="example8.TXT">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="input6.txt">
@@ -50,6 +55,9 @@
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	  </Content>
 	  <Content Include="input7.txt">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Include="input8.txt">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	  </Content>
     <Compile Include="Day2Part2.fs" />
