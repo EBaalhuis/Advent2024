@@ -6,10 +6,27 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="Day10Part1.fs" />
+    <Compile Include="Day10Part2.fs" />
+    <Compile Include="Day11Part1.fs" />
+    <Compile Include="Day11Part2.fs" />
+    <Compile Include="Day12part1.fs" />
+    <Compile Include="Day12Part2.fs" />
+    <Compile Include="Day9Part1.fs" />
     <Compile Include="Day7Part1.fs" />
     <Compile Include="Day7Part2.fs" />
     <Compile Include="Day8Part1.fs" />
     <Compile Include="Day8Part2.fs" />
+    <Compile Include="Day9Part2.fs" />
+    <Content Include="example10.TXT">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="example11.TXT">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="example12.TXT">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="example6.TXT">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -17,6 +34,18 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="example8.TXT">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="example9.TXT">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="input10.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="input11.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="input12.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="input6.txt">
@@ -58,6 +87,9 @@
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	  </Content>
 	  <Content Include="input8.txt">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Include="input9.txt">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	  </Content>
     <Compile Include="Day2Part2.fs" />
