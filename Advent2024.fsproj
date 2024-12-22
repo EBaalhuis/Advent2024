@@ -20,6 +20,8 @@
     <Compile Include="Day15Part2.fs" />
     <Compile Include="Day16Part1.fs" />
     <Compile Include="Day16Part2.fs" />
+    <Compile Include="Day17Part1.fs" />
+    <Compile Include="Day17Part2.fs" />
     <Compile Include="Day9Part1.fs" />
     <Compile Include="Day7Part1.fs" />
     <Compile Include="Day7Part2.fs" />
@@ -45,6 +47,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="example16.TXT">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="example17.TXT">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="example6.TXT">
@@ -78,6 +83,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="input16.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="input17.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="input6.txt">
