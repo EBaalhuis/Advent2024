@@ -221,3 +221,87 @@ type TestClass () =
         let actual = Advent2024.Day18Part2.result
         Assert.AreEqual(expected, actual);
 
+    //[<TestMethod>]
+    //member this.Day19Part1 () =
+    //    let expected = 0
+    //    let actual = Advent2024.Day19Part1.result
+    //    Assert.AreEqual(expected, actual);
+
+    //[<TestMethod>]
+    //member this.Day19Part2 () =
+    //    let expected = 0
+    //    let actual = Advent2024.Day19Part2.result
+    //    Assert.AreEqual(expected, actual);
+
+    //[<TestMethod>]
+    //member this.Day20Part1 () =
+    //    let expected = 0
+    //    let actual = Advent2024.Day20Part1.result
+    //    Assert.AreEqual(expected, actual);
+
+    //[<TestMethod>]
+    //member this.Day20Part2 () =
+    //    let expected = 0
+    //    let actual = Advent2024.Day20Part2.result
+    //    Assert.AreEqual(expected, actual);
+
+    //[<TestMethod>]
+    //member this.Day21Part1 () =
+    //    let expected = 0
+    //    let actual = Advent2024.Day21Part1.result
+    //    Assert.AreEqual(expected, actual);
+
+    //[<TestMethod>]
+    //member this.Day21Part2 () =
+    //    let expected = 0
+    //    let actual = Advent2024.Day21Part2.result
+    //    Assert.AreEqual(expected, actual);
+
+    //[<TestMethod>]
+    //member this.Day22Part1 () =
+    //    let expected = 0
+    //    let actual = Advent2024.Day22Part1.result
+    //    Assert.AreEqual(expected, actual);
+
+    //[<TestMethod>]
+    //member this.Day22Part2 () =
+    //    let expected = 0
+    //    let actual = Advent2024.Day22Part2.result
+    //    Assert.AreEqual(expected, actual);
+
+    //[<TestMethod>]
+    //member this.Day23Part1 () =
+    //    let expected = 0
+    //    let actual = Advent2024.Day23Part1.result
+    //    Assert.AreEqual(expected, actual);
+
+    //[<TestMethod>]
+    //member this.Day23Part2 () =
+    //    let expected = 0
+    //    let actual = Advent2024.Day23Part2.result
+    //    Assert.AreEqual(expected, actual);
+
+    //[<TestMethod>]
+    //member this.Day24Part1 () =
+    //    let expected = 0
+    //    let actual = Advent2024.Day24Part1.result
+    //    Assert.AreEqual(expected, actual);
+
+    //[<TestMethod>]
+    //member this.Day24Part2 () =
+    //    let expected = 0
+    //    let actual = Advent2024.Day24Part2.result
+    //    Assert.AreEqual(expected, actual);
+
+    //[<TestMethod>]
+    //member this.Day25Part1 () =
+    //    let expected = 0
+    //    let actual = Advent2024.Day25Part1.result
+    //    Assert.AreEqual(expected, actual);
+
+    //[<TestMethod>]
+    //member this.Day25Part2 () =
+    //    let expected = 0
+    //    let actual = Advent2024.Day25Part2.result
+    //    Assert.AreEqual(expected, actual);
+
