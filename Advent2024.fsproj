@@ -6,6 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+	<Compile Include="Memoize.fs" />
     <Compile Include="Day13Part1.fs" />
     <Compile Include="Day10Part1.fs" />
     <Compile Include="Day10Part2.fs" />
@@ -71,25 +72,25 @@
     <Content Include="example18.TXT">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="example19.TXT" >
+    <Content Include="example19.TXT">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-	  <Content Include="example20.txt" >
+	  <Content Include="example20.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-	  <Content Include="example21.txt" >
+	  <Content Include="example21.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="example22.txt" >
+    <Content Include="example22.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="example23.txt" >
+    <Content Include="example23.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="example24.txt" >
+    <Content Include="example24.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-	  <Content Include="example25.txt" >
+	  <Content Include="example25.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="example6.TXT">
@@ -131,25 +132,25 @@
     <Content Include="input18.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="input19.txt" >
+    <Content Include="input19.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-	  <Content Include="input20.txt" >
+	  <Content Include="input20.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-	  <Content Include="input21.txt" >
+	  <Content Include="input21.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-	  <Content Include="input22.txt" >
+	  <Content Include="input22.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-	  <Content Include="input23.txt" >
+	  <Content Include="input23.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
 	  <Content Include="input24.txt">
 		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	  </Content>
-	  <Content Include="input25.txt" >
+	  <Content Include="input25.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="input6.txt">
