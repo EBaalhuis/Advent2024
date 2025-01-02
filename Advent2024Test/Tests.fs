@@ -263,23 +263,23 @@ type TestClass () =
         let actual = Advent2024.Day22Part1.result
         Assert.AreEqual(expected, actual);
 
+    //[<TestMethod>]
+    //member this.Day22Part2 () =
+    //    let expected = 1555L
+    //    let actual = Advent2024.Day22Part2.result
+    //    Assert.AreEqual(expected, actual);
+
     [<TestMethod>]
-    member this.Day22Part2 () =
-        let expected = 1555L
-        let actual = Advent2024.Day22Part2.result
+    member this.Day23Part1 () =
+        let expected = 1306
+        let actual = Advent2024.Day23Part1.result
         Assert.AreEqual(expected, actual);
 
-    //[<TestMethod>]
-    //member this.Day23Part1 () =
-    //    let expected = 0
-    //    let actual = Advent2024.Day23Part1.result
-    //    Assert.AreEqual(expected, actual);
-
-    //[<TestMethod>]
-    //member this.Day23Part2 () =
-    //    let expected = 0
-    //    let actual = Advent2024.Day23Part2.result
-    //    Assert.AreEqual(expected, actual);
+    [<TestMethod>]
+    member this.Day23Part2 () =
+        let expected = "bd,dk,ir,ko,lk,nn,ob,pt,te,tl,uh,wj,yl"
+        let actual = Advent2024.Day23Part2.result
+        Assert.AreEqual(expected, actual);
 
     //[<TestMethod>]
     //member this.Day24Part1 () =
